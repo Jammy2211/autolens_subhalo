@@ -1,0 +1,49 @@
+Total Free Parameters = 13
+
+model                                                                           CollectionPriorModel (N=13)
+    galaxies                                                                    CollectionPriorModel (N=13)
+        lens                                                                    Galaxy (N=10)
+            mass                                                                EllPowerLawBroken (N=8)
+            shear                                                               ExternalShear (N=2)
+        subhalo                                                                 Galaxy (N=3)
+            mass                                                                SphNFWMCRLudlow (N=3)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        VoronoiNNBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.164
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = 0.036302781641654513, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = 0.03519364032002235, sigma = 0.05
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.15057747182352857, sigma = 0.2
+                elliptical_comps_1                                              GaussianPrior, mean = 0.24805463202996314, sigma = 0.2
+            einstein_radius                                                     GaussianPrior, mean = 1.609067651067067, sigma = 0.40226691276676674
+            inner_slope                                                         GaussianPrior, mean = 1.1948485100196844, sigma = 0.7023072733390634
+            outer_slope                                                         GaussianPrior, mean = 1.2412513292647536, sigma = 0.7603046149641617
+            break_radius                                                        GaussianPrior, mean = 0.477223988496584, sigma = 0.5186163531307139
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.0009631280646988038, sigma = 0.05
+                elliptical_comps_1                                              GaussianPrior, mean = -0.05456790559189424, sigma = 0.05
+    subhalo
+        redshift                                                                0.164
+        mass
+            centre
+                centre_0                                                        UniformPrior, lower_limit = 2.58, upper_limit = 4.3
+                centre_1                                                        UniformPrior, lower_limit = 0.8600000000000003, upper_limit = 2.58
+            mass_at_200                                                         LogUniformPrior, lower_limit = 1000000.0, upper_limit = 1000000000000.0
+            redshift_object                                                     0.164
+            redshift_source                                                     0.324
+    source
+        redshift                                                                0.324
+        pixelization
+            weight_floor                                                        0.85141765435563
+            weight_power                                                        6.49021104894708
+        regularization
+            inner_coefficient                                                   0.46319975462248364
+            outer_coefficient                                                   11.016469699780165
+            signal_scale                                                        0.91989668739544

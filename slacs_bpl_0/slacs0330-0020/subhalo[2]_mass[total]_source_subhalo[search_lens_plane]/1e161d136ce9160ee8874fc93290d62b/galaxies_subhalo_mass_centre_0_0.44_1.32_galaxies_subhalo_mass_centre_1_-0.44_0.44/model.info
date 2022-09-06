@@ -1,0 +1,49 @@
+Total Free Parameters = 13
+
+model                                                                           CollectionPriorModel (N=13)
+    galaxies                                                                    CollectionPriorModel (N=13)
+        lens                                                                    Galaxy (N=10)
+            mass                                                                EllPowerLawBroken (N=8)
+            shear                                                               ExternalShear (N=2)
+        subhalo                                                                 Galaxy (N=3)
+            mass                                                                SphNFWMCRLudlow (N=3)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        DelaunayBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.351
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = -0.029134023502536594, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = -0.10373838043561587, sigma = 0.051385084631183825
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.0366646355070297, sigma = 0.2
+                elliptical_comps_1                                              GaussianPrior, mean = -0.028355429542411197, sigma = 0.2
+            einstein_radius                                                     GaussianPrior, mean = 1.0677099834432962, sigma = 0.26692749586082404
+            inner_slope                                                         GaussianPrior, mean = 1.1348046355649954, sigma = 0.2
+            outer_slope                                                         GaussianPrior, mean = 1.4285000240614383, sigma = 0.7212355737773852
+            break_radius                                                        GaussianPrior, mean = 0.4069722155038162, sigma = 0.39660293627690907
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.06434680109654023, sigma = 0.05
+                elliptical_comps_1                                              GaussianPrior, mean = 0.025992497230178102, sigma = 0.05
+    subhalo
+        redshift                                                                0.351
+        mass
+            centre
+                centre_0                                                        UniformPrior, lower_limit = 0.4400000000000004, upper_limit = 1.3200000000000003
+                centre_1                                                        UniformPrior, lower_limit = -0.43999999999999995, upper_limit = 0.4400000000000004
+            mass_at_200                                                         LogUniformPrior, lower_limit = 1000000.0, upper_limit = 1000000000000.0
+            redshift_object                                                     0.351
+            redshift_source                                                     1.071
+    source
+        redshift                                                                1.071
+        pixelization
+            weight_floor                                                        0.30922170066499
+            weight_power                                                        2.99726345914209
+        regularization
+            inner_coefficient                                                   0.00043353496359698087
+            outer_coefficient                                                   63.87865481329355
+            signal_scale                                                        0.0372639621794

@@ -1,0 +1,49 @@
+Total Free Parameters = 13
+
+model                                                                           CollectionPriorModel (N=13)
+    galaxies                                                                    CollectionPriorModel (N=13)
+        lens                                                                    Galaxy (N=10)
+            mass                                                                EllPowerLawBroken (N=8)
+            shear                                                               ExternalShear (N=2)
+        subhalo                                                                 Galaxy (N=3)
+            mass                                                                SphNFWMCRLudlow (N=3)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        VoronoiNNBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.191
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = 0.006682945701333329, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = -0.009781238385259598, sigma = 0.05
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = -0.01648288262964951, sigma = 0.2
+                elliptical_comps_1                                              GaussianPrior, mean = 0.08087544005800021, sigma = 0.2
+            einstein_radius                                                     GaussianPrior, mean = 1.386262229271605, sigma = 0.34656555731790123
+            inner_slope                                                         GaussianPrior, mean = 1.1539546583352205, sigma = 0.4030673913844336
+            outer_slope                                                         GaussianPrior, mean = 1.4663003256400018, sigma = 0.3794249708932669
+            break_radius                                                        GaussianPrior, mean = 0.8625414504691955, sigma = 0.447840135956798
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.021082689882714313, sigma = 0.05
+                elliptical_comps_1                                              GaussianPrior, mean = -0.01694024170658925, sigma = 0.05
+    subhalo
+        redshift                                                                0.191
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = 2.3049956945928174, sigma = 1.0
+                centre_1                                                        GaussianPrior, mean = 1.0977783961853889, sigma = 1.0
+            mass_at_200                                                         LogUniformPrior, lower_limit = 1000000.0, upper_limit = 1000000000000.0
+            redshift_object                                                     0.191
+            redshift_source                                                     0.696
+    source
+        redshift                                                                0.696
+        pixelization
+            weight_floor                                                        0.98916092546253
+            weight_power                                                        11.64148144175141
+        regularization
+            inner_coefficient                                                   1.3798180516050093e-05
+            outer_coefficient                                                   45.010700053524495
+            signal_scale                                                        0.04859709240733

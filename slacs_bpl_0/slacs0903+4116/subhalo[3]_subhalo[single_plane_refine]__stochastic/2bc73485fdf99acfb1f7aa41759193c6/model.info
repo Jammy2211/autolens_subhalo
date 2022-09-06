@@ -1,0 +1,49 @@
+Total Free Parameters = 13
+
+model                                                                           ModelMapper (N=13)
+    galaxies                                                                    ModelMapper (N=13)
+        lens                                                                    Galaxy (N=10)
+            mass                                                                EllPowerLawBroken (N=8)
+            shear                                                               ExternalShear (N=2)
+        subhalo                                                                 Galaxy (N=3)
+            mass                                                                SphNFWMCRLudlow (N=3)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        VoronoiNNBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.43
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = -0.03259790345101594, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = -0.013051851377428782, sigma = 0.05
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.03427652195895915, sigma = 0.2
+                elliptical_comps_1                                              GaussianPrior, mean = 0.02568009987726572, sigma = 0.2
+            einstein_radius                                                     GaussianPrior, mean = 1.261273246741265, sigma = 0.31531831168531627
+            inner_slope                                                         GaussianPrior, mean = 1.2332018762476866, sigma = 0.24083091272721313
+            outer_slope                                                         GaussianPrior, mean = 1.8019310959458081, sigma = 1.1759959197589078
+            break_radius                                                        GaussianPrior, mean = 0.7754342960978945, sigma = 0.5053387422596016
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.03878815114281509, sigma = 0.05
+                elliptical_comps_1                                              GaussianPrior, mean = -0.015490790108122699, sigma = 0.05
+    subhalo
+        redshift                                                                0.43
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = -0.1553294163363855, sigma = 2.7494043195257096
+                centre_1                                                        GaussianPrior, mean = -2.3849311706763143, sigma = 2.287803883875586
+            mass_at_200                                                         LogUniformPrior, lower_limit = 1000000.0, upper_limit = 1000000000000.0
+            redshift_object                                                     0.43
+            redshift_source                                                     1.065
+    source
+        redshift                                                                1.065
+        pixelization
+            weight_floor                                                        0.65169503219435
+            weight_power                                                        6.36243075342002
+        regularization
+            inner_coefficient                                                   1.0536502559640122
+            outer_coefficient                                                   29.957370331951562
+            signal_scale                                                        0.14851735034271

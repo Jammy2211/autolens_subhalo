@@ -1,0 +1,55 @@
+Total Free Parameters = 8
+
+model                                                                           CollectionPriorModel (N=8)
+    galaxies                                                                    CollectionPriorModel (N=8)
+        lens                                                                    Galaxy (N=8)
+            hyper_galaxy                                                        HyperGalaxy (N=0)
+            bulge                                                               EllSersic (N=0)
+            disk                                                                EllSersic (N=0)
+            mass                                                                EllPowerLaw (N=6)
+            shear                                                               ExternalShear (N=2)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        DelaunayBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.215
+        hyper_galaxy
+            contribution_factor                                                 9.4694941249581
+            noise_factor                                                        997.7142311012202
+            noise_power                                                         2.55583688809584
+        bulge
+            centre                                                              (0.005952938553530014, -0.003801487097508411)
+            elliptical_comps                                                    (-0.21569849216961692, 0.20350562998582308)
+            intensity                                                           0.03567829484336622
+            effective_radius                                                    3.47883987348331
+            sersic_index                                                        1.95324290051963
+        disk
+            centre                                                              (0.005952938553530014, -0.003801487097508411)
+            elliptical_comps                                                    (-0.07343507852714552, 0.0652208234613348)
+            intensity                                                           0.18357970277066551
+            effective_radius                                                    1.13565915915169
+            sersic_index                                                        4.71837807470857
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = 0.005243292604141225, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = 0.008850149396924464, sigma = 0.05
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = -0.09443180423083049, sigma = 0.2
+                elliptical_comps_1                                              GaussianPrior, mean = 0.07915123948496358, sigma = 0.2
+            einstein_radius                                                     GaussianPrior, mean = 1.2156753378249578, sigma = 0.30391883445623946
+            slope                                                               UniformPrior, lower_limit = 1.5, upper_limit = 3.0
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.013062826372246242, sigma = 0.05
+                elliptical_comps_1                                              GaussianPrior, mean = -0.02396465020956126, sigma = 0.05
+    source
+        redshift                                                                0.481
+        pixelization
+            weight_floor                                                        0.00046635316216
+            weight_power                                                        6.39141612257358
+        regularization
+            inner_coefficient                                                   0.0035627687686328063
+            outer_coefficient                                                   113.18046761777966
+            signal_scale                                                        0.02348777527957

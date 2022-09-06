@@ -1,0 +1,111 @@
+Bayesian Evidence                                                                         4101.68279961
+Maximum Log Likelihood                                                                    4192.11516567
+Maximum Log Posterior                                                                     1002878.06184597
+
+model                                                                                     CollectionPriorModel (N=13)
+    galaxies                                                                              CollectionPriorModel (N=13)
+        lens                                                                              Galaxy (N=13)
+            hyper_galaxy                                                                  HyperGalaxy (N=1)
+            bulge                                                                         EllSersic (N=7)
+            disk                                                                          EllSersic (N=7)
+            mass                                                                          EllIsothermal (N=0)
+            shear                                                                         ExternalShear (N=0)
+        source                                                                            Galaxy (N=0)
+            pixelization                                                                  VoronoiNNBrightnessImage (N=0)
+            regularization                                                                AdaptiveBrightnessSplit (N=0)
+
+Maximum Log Likelihood Model:
+
+galaxies
+    lens
+        bulge
+            elliptical_comps
+                elliptical_comps_0                                                        0.013
+                elliptical_comps_1                                                        -0.092
+            intensity                                                                     0.136
+            effective_radius                                                              1.645
+            sersic_index                                                                  2.089
+        disk
+            elliptical_comps
+                elliptical_comps_0                                                        0.044
+                elliptical_comps_1                                                        -0.160
+            intensity                                                                     1.510
+            effective_radius                                                              0.232
+            sersic_index                                                                  0.965
+            centre
+                centre_0                                                                  0.003
+                centre_1                                                                  -0.006
+        hyper_galaxy
+            noise_factor                                                                  126.255
+
+
+Summary (3.0 sigma limits):
+
+galaxies
+    lens
+        bulge
+            elliptical_comps
+                elliptical_comps_0                                                        0.0140 (0.0079, 0.0198)
+                elliptical_comps_1                                                        -0.0932 (-0.0981, -0.0878)
+            intensity                                                                     0.1285 (0.1018, 0.1563)
+            effective_radius                                                              1.7164 (1.4956, 2.0498)
+            sersic_index                                                                  2.1481 (1.7402, 2.5027)
+        disk
+            elliptical_comps
+                elliptical_comps_0                                                        0.0439 (0.0370, 0.0517)
+                elliptical_comps_1                                                        -0.1585 (-0.1680, -0.1495)
+            intensity                                                                     1.4934 (1.3557, 1.6456)
+            effective_radius                                                              0.2327 (0.2268, 0.2417)
+            sersic_index                                                                  0.9657 (0.8873, 1.0349)
+            centre
+                centre_0                                                                  0.0026 (0.0017, 0.0035)
+                centre_1                                                                  -0.0064 (-0.0072, -0.0056)
+        hyper_galaxy
+            noise_factor                                                                  153.832 (21.571, 389.752)
+
+
+Summary (1.0 sigma limits):
+
+galaxies
+    lens
+        bulge
+            elliptical_comps
+                elliptical_comps_0                                                        0.0140 (0.0121, 0.0158)
+                elliptical_comps_1                                                        -0.0932 (-0.0948, -0.0916)
+            intensity                                                                     0.1285 (0.1199, 0.1368)
+            effective_radius                                                              1.7164 (1.6407, 1.8076)
+            sersic_index                                                                  2.1481 (2.0294, 2.2714)
+        disk
+            elliptical_comps
+                elliptical_comps_0                                                        0.0439 (0.0418, 0.0461)
+                elliptical_comps_1                                                        -0.1585 (-0.1615, -0.1554)
+            intensity                                                                     1.4934 (1.4445, 1.5408)
+            effective_radius                                                              0.2327 (0.2305, 0.2353)
+            sersic_index                                                                  0.9657 (0.9417, 0.9895)
+            centre
+                centre_0                                                                  0.0026 (0.0023, 0.0029)
+                centre_1                                                                  -0.0064 (-0.0066, -0.0061)
+        hyper_galaxy
+            noise_factor                                                                  153.832 (86.322, 222.799)
+
+instances
+
+galaxies
+    lens
+        redshift                                                                          0.228
+        hyper_galaxy
+            contribution_factor                                                           1.7673444111149
+            noise_power                                                                   3.05462158814018
+        mass
+            einstein_radius                                                               1.2709666848187067
+            slope                                                                         2.0
+            core_radius                                                                   0.0
+    source
+        redshift                                                                          0.463
+        pixelization
+            weight_floor                                                                  0.32882537758269
+            weight_power                                                                  1.19122719027073
+        regularization
+            inner_coefficient                                                             0.8083686836474872
+            outer_coefficient                                                             74.31781542726496
+            signal_scale                                                                  0.05331652594636

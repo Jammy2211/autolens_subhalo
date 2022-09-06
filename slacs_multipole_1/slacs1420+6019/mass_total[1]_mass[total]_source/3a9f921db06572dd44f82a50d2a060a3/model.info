@@ -1,0 +1,46 @@
+Total Free Parameters = 10
+
+model                                                                           CollectionPriorModel (N=10)
+    galaxies                                                                    CollectionPriorModel (N=10)
+        lens                                                                    Galaxy (N=10)
+            mass                                                                EllPowerLaw (N=6)
+            shear                                                               ExternalShear (N=2)
+            multipole                                                           Multipole (N=6)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        VoronoiNNBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.063
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = 0.001043449470911744, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = 0.00347624779410879, sigma = 0.05
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = -0.2674109344169708, sigma = 0.2
+                elliptical_comps_1                                              GaussianPrior, mean = -0.2877390661297994, sigma = 0.2
+            einstein_radius                                                     GaussianPrior, mean = 1.2005239404870287, sigma = 0.3001309851217572
+            slope                                                               UniformPrior, lower_limit = 1.5, upper_limit = 3.0
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              UniformPrior, lower_limit = -0.2, upper_limit = 0.2
+                elliptical_comps_1                                              UniformPrior, lower_limit = -0.2, upper_limit = 0.2
+        multipole
+            centre
+                centre_0                                                        GaussianPrior, mean = 0.001043449470911744, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = 0.00347624779410879, sigma = 0.05
+            einstein_radius                                                     GaussianPrior, mean = 1.2005239404870287, sigma = 0.3001309851217572
+            slope                                                               UniformPrior, lower_limit = 1.5, upper_limit = 3.0
+            elliptical_comps_multipole
+                elliptical_comps_multipole_0                                    UniformPrior, lower_limit = 0.0, upper_limit = 0.05
+                elliptical_comps_multipole_1                                    UniformPrior, lower_limit = 0.0, upper_limit = 0.05
+    source
+        redshift                                                                0.535
+        pixelization
+            weight_floor                                                        0.67148939576082
+            weight_power                                                        7.01220538359845
+        regularization
+            inner_coefficient                                                   0.003925038430641855
+            outer_coefficient                                                   55.50164894575349
+            signal_scale                                                        0.02897574480258

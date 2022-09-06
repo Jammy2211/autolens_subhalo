@@ -1,0 +1,47 @@
+Total Free Parameters = 11
+
+model                                                                           CollectionPriorModel (N=11)
+    galaxies                                                                    CollectionPriorModel (N=11)
+        lens                                                                    Galaxy (N=8)
+            mass                                                                EllPowerLaw (N=6)
+            shear                                                               ExternalShear (N=2)
+        subhalo                                                                 Galaxy (N=3)
+            mass                                                                SphNFWMCRLudlow (N=3)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        DelaunayBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.133
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = 0.003433029817572131, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = -0.00023534553519293923, sigma = 0.05
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = -0.27446270674124446, sigma = 0.2
+                elliptical_comps_1                                              GaussianPrior, mean = 0.17089852267109062, sigma = 0.2
+            einstein_radius                                                     GaussianPrior, mean = 1.1706767339215978, sigma = 0.29266918348039944
+            slope                                                               GaussianPrior, mean = 2.2151732987937027, sigma = 0.2
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = -0.03946521355955143, sigma = 0.05
+                elliptical_comps_1                                              GaussianPrior, mean = 0.0719529640846623, sigma = 0.05
+    subhalo
+        redshift                                                                0.133
+        mass
+            centre
+                centre_0                                                        UniformPrior, lower_limit = 0.6000000000000005, upper_limit = 1.8000000000000007
+                centre_1                                                        UniformPrior, lower_limit = 0.6000000000000005, upper_limit = 1.8000000000000007
+            mass_at_200                                                         LogUniformPrior, lower_limit = 1000000.0, upper_limit = 1000000000000.0
+            redshift_object                                                     0.133
+            redshift_source                                                     0.329
+    source
+        redshift                                                                0.329
+        pixelization
+            weight_floor                                                        0.83670892126903
+            weight_power                                                        16.18046558858788
+        regularization
+            inner_coefficient                                                   0.00379093354081336
+            outer_coefficient                                                   19.527798456837807
+            signal_scale                                                        0.12722149627835

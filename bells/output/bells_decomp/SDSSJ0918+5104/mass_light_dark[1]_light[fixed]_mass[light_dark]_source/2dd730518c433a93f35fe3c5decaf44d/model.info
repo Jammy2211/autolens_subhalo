@@ -1,0 +1,63 @@
+Total Free Parameters = 11
+
+model                                                                           CollectionPriorModel (N=11)
+    galaxies                                                                    CollectionPriorModel (N=11)
+        lens                                                                    Galaxy (N=11)
+            bulge                                                               EllSersicRadialGradient (N=2)
+            disk                                                                EllSersicRadialGradient (N=2)
+            dark                                                                EllNFWMCRLudlow (N=5)
+            shear                                                               ExternalShear (N=2)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        VoronoiNNBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.5811
+        bulge
+            centre
+                centre_0                                                        -0.0026936005215144024
+                centre_1                                                        -0.0011190639905029542
+            elliptical_comps
+                elliptical_comps_0                                              -0.07168347340345212
+                elliptical_comps_1                                              -0.015543993590741559
+            intensity                                                           0.02808742544252376
+            effective_radius                                                    0.42404223016441
+            sersic_index                                                        2.60752063185876
+            mass_to_light_ratio                                                 LogUniformPrior, lower_limit = 1.0070689044503849, upper_limit = 503.5344522235343
+            mass_to_light_gradient                                              UniformPrior, lower_limit = -1.0, upper_limit = 1.0
+        disk
+            centre
+                centre_0                                                        -0.0026936005215144024
+                centre_1                                                        -0.0011190639905029542
+            elliptical_comps
+                elliptical_comps_0                                              -0.3930636296622916
+                elliptical_comps_1                                              -0.052077767617164324
+            intensity                                                           0.001448098132389362
+            effective_radius                                                    3.60141853623885
+            sersic_index                                                        0.83052301862655
+            mass_to_light_ratio                                                 LogUniformPrior, lower_limit = 2.473163995702215, upper_limit = 1236.5819978701668
+            mass_to_light_gradient                                              UniformPrior, lower_limit = -1.0, upper_limit = 1.0
+        dark
+            centre
+                centre_0                                                        GaussianPrior, mean = 0.0, sigma = 0.1
+                centre_1                                                        GaussianPrior, mean = 0.0, sigma = 0.1
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.0, sigma = 0.3
+                elliptical_comps_1                                              GaussianPrior, mean = 0.0, sigma = 0.3
+            mass_at_200                                                         LogUniformPrior, lower_limit = 10000000000.0, upper_limit = 1000000000000000.0
+            redshift_object                                                     0.5811
+            redshift_source                                                     2.403
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              UniformPrior, lower_limit = -0.2, upper_limit = 0.2
+                elliptical_comps_1                                              UniformPrior, lower_limit = -0.2, upper_limit = 0.2
+    source
+        redshift                                                                2.403
+        pixelization
+            weight_floor                                                        0.40851693557463
+            weight_power                                                        12.53888892599858
+        regularization
+            inner_coefficient                                                   2.7557708157789205e-05
+            outer_coefficient                                                   76.97636883924119
+            signal_scale                                                        0.01634245469028

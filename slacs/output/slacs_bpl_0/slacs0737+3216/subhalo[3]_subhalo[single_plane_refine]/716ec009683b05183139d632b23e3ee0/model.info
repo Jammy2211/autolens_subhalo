@@ -1,0 +1,49 @@
+Total Free Parameters = 13
+
+model                                                                           CollectionPriorModel (N=13)
+    galaxies                                                                    CollectionPriorModel (N=13)
+        lens                                                                    Galaxy (N=10)
+            mass                                                                EllPowerLawBroken (N=8)
+            shear                                                               ExternalShear (N=2)
+        subhalo                                                                 Galaxy (N=3)
+            mass                                                                SphNFWMCRLudlow (N=3)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        VoronoiNNBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.322
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = -0.00907832930907481, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = -0.011177073345680875, sigma = 0.05
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = -0.00988136745887049, sigma = 0.2
+                elliptical_comps_1                                              GaussianPrior, mean = -0.05530941069297854, sigma = 0.2
+            einstein_radius                                                     GaussianPrior, mean = 0.9611261083629474, sigma = 0.24028152709073686
+            inner_slope                                                         GaussianPrior, mean = 1.0630603432639452, sigma = 0.30265232798339015
+            outer_slope                                                         GaussianPrior, mean = 1.4079961561959076, sigma = 0.3454906448203956
+            break_radius                                                        GaussianPrior, mean = 0.39735887577852846, sigma = 0.26770752244124063
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.0362379291356097, sigma = 0.05
+                elliptical_comps_1                                              GaussianPrior, mean = 0.10068273812629085, sigma = 0.05
+    subhalo
+        redshift                                                                0.322
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = 0.7523486253264744, sigma = 1.0
+                centre_1                                                        GaussianPrior, mean = -0.8128642480490306, sigma = 1.0
+            mass_at_200                                                         LogUniformPrior, lower_limit = 1000000.0, upper_limit = 1000000000000.0
+            redshift_object                                                     0.322
+            redshift_source                                                     0.581
+    source
+        redshift                                                                0.581
+        pixelization
+            weight_floor                                                        0.55755331695349
+            weight_power                                                        17.4802451633972
+        regularization
+            inner_coefficient                                                   8.365849595786884e-06
+            outer_coefficient                                                   199.3348772907874
+            signal_scale                                                        0.01331372260465

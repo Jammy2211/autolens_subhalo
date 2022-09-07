@@ -1,0 +1,56 @@
+Total Free Parameters = 12
+
+model                                                                           CollectionPriorModel (N=12)
+    galaxies                                                                    CollectionPriorModel (N=11)
+        lens                                                                    Galaxy (N=8)
+            mass                                                                EllPowerLaw (N=6)
+            shear                                                               ExternalShear (N=2)
+        subhalo                                                                 Galaxy (N=3)
+            mass                                                                SphNFWMCRLudlow (N=3)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        DelaunayBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+    clumps                                                                      CollectionPriorModel (N=1)
+        clump_0                                                                 Galaxy (N=1)
+            mass                                                                SphIsothermal (N=1)
+
+galaxies
+    lens
+        redshift                                                                0.498
+        mass
+            centre
+                centre_0                                                        GaussianPrior, mean = 0.0114528862381261, sigma = 0.05
+                centre_1                                                        GaussianPrior, mean = -0.047003640337898764, sigma = 0.05
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = -0.12747509690128236, sigma = 0.2
+                elliptical_comps_1                                              GaussianPrior, mean = -0.014867110691845596, sigma = 0.2
+            einstein_radius                                                     GaussianPrior, mean = 1.2210738916570654, sigma = 0.30526847291426634
+            slope                                                               GaussianPrior, mean = 2.575278922213263, sigma = 0.20629853430226586
+        shear
+            elliptical_comps
+                elliptical_comps_0                                              GaussianPrior, mean = 0.02995777184406107, sigma = 0.05
+                elliptical_comps_1                                              GaussianPrior, mean = -0.0003169202021241768, sigma = 0.05
+    subhalo
+        redshift                                                                0.498
+        mass
+            centre
+                centre_0                                                        UniformPrior, lower_limit = 1.2000000000000002, upper_limit = 2.0
+                centre_1                                                        UniformPrior, lower_limit = 1.2000000000000002, upper_limit = 2.0
+            mass_at_200                                                         LogUniformPrior, lower_limit = 1000000.0, upper_limit = 1000000000000.0
+            redshift_object                                                     0.498
+            redshift_source                                                     2.7322
+    source
+        redshift                                                                2.7322
+        pixelization
+            weight_floor                                                        0.7418935711561
+            weight_power                                                        12.17946267624166
+        regularization
+            inner_coefficient                                                   0.007140947431303328
+            outer_coefficient                                                   198.00598533183495
+            signal_scale                                                        0.01858488180632
+clumps
+    clump_0
+        redshift                                                                0.498
+        mass
+            centre                                                              (5.800000000000001, -2.35)
+            einstein_radius                                                     GaussianPrior, mean = 0.06271326184182642, sigma = 0.08858954066670006

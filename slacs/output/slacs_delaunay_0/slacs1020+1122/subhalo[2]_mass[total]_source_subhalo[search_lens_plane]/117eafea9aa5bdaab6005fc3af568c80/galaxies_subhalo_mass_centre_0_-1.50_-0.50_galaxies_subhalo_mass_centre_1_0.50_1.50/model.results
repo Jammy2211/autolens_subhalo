@@ -1,0 +1,123 @@
+Bayesian Evidence                                                                         21232.97813979
+Maximum Log Likelihood                                                                    21261.36109077
+Maximum Log Posterior                                                                     21261.83428589
+
+model                                                                                     CollectionPriorModel (N=11)
+    galaxies                                                                              CollectionPriorModel (N=11)
+        lens                                                                              Galaxy (N=8)
+            hyper_galaxy                                                                  HyperGalaxy (N=0)
+            bulge                                                                         EllSersic (N=0)
+            disk                                                                          EllSersic (N=0)
+            mass                                                                          EllPowerLaw (N=6)
+            shear                                                                         ExternalShear (N=2)
+        subhalo                                                                           Galaxy (N=3)
+            mass                                                                          SphNFWMCRLudlow (N=3)
+        source                                                                            Galaxy (N=0)
+            pixelization                                                                  DelaunayBrightnessImage (N=0)
+            regularization                                                                AdaptiveBrightnessSplit (N=0)
+
+Maximum Log Likelihood Model:
+
+galaxies
+    lens
+        mass
+            elliptical_comps
+                elliptical_comps_0                                                        -0.116
+                elliptical_comps_1                                                        -0.039
+            einstein_radius                                                               1.082
+            centre
+                centre_0                                                                  0.089
+                centre_1                                                                  -0.186
+            slope                                                                         1.663
+        shear
+            elliptical_comps
+                elliptical_comps_0                                                        -0.084
+                elliptical_comps_1                                                        -0.030
+    subhalo
+        mass
+            mass_at_200                                                                   2444814.116
+            centre
+                centre_0                                                                  -1.108
+                centre_1                                                                  0.781
+
+
+Summary (3.0 sigma limits):
+
+galaxies
+    lens
+        mass
+            elliptical_comps
+                elliptical_comps_0                                                        -0.1161 (-0.1240, -0.1111)
+                elliptical_comps_1                                                        -0.0397 (-0.0504, -0.0150)
+            einstein_radius                                                               1.0766 (1.0551, 1.0860)
+            centre
+                centre_0                                                                  0.0877 (0.0838, 0.0931)
+                centre_1                                                                  -0.1858 (-0.1929, -0.1822)
+            slope                                                                         1.6449 (1.5993, 1.6791)
+        shear
+            elliptical_comps
+                elliptical_comps_0                                                        -0.0850 (-0.0932, -0.0821)
+                elliptical_comps_1                                                        -0.0309 (-0.0389, -0.0115)
+    subhalo
+        mass
+            mass_at_200                                                                   6.6543e+06 (1.0043e+06, 2.6132e+08)
+            centre
+                centre_0                                                                  -1.0974 (-1.2844, -0.9441)
+                centre_1                                                                  0.8789 (0.5032, 1.4660)
+
+
+Summary (1.0 sigma limits):
+
+galaxies
+    lens
+        mass
+            elliptical_comps
+                elliptical_comps_0                                                        -0.1161 (-0.1175, -0.1140)
+                elliptical_comps_1                                                        -0.0397 (-0.0438, -0.0358)
+            einstein_radius                                                               1.0766 (1.0738, 1.0800)
+            centre
+                centre_0                                                                  0.0877 (0.0860, 0.0894)
+                centre_1                                                                  -0.1858 (-0.1878, -0.1843)
+            slope                                                                         1.6449 (1.6338, 1.6579)
+        shear
+            elliptical_comps
+                elliptical_comps_0                                                        -0.0850 (-0.0861, -0.0839)
+                elliptical_comps_1                                                        -0.0309 (-0.0339, -0.0281)
+    subhalo
+        mass
+            mass_at_200                                                                   6.6543e+06 (2.4869e+06, 2.0482e+07)
+            centre
+                centre_0                                                                  -1.0974 (-1.1547, -1.0412)
+                centre_1                                                                  0.8789 (0.7257, 1.0760)
+
+instances
+
+galaxies
+    lens
+        redshift                                                                          0.282
+        hyper_galaxy
+            contribution_factor                                                           18.68731981414159
+            noise_factor                                                                  732.5262105739827
+            noise_power                                                                   2.98675707575389
+        bulge
+            intensity                                                                     0.10834132791118425
+            effective_radius                                                              1.69722169381886
+            sersic_index                                                                  1.78972291199142
+        disk
+            intensity                                                                     1.8793915642275947
+            effective_radius                                                              0.21886147313831
+            sersic_index                                                                  1.71721879607453
+    subhalo
+        redshift                                                                          0.282
+        mass
+            redshift_object                                                               0.282
+            redshift_source                                                               0.553
+    source
+        redshift                                                                          0.553
+        pixelization
+            weight_floor                                                                  0.92130056288127
+            weight_power                                                                  15.27417683848516
+        regularization
+            inner_coefficient                                                             8.546591013150137e-06
+            outer_coefficient                                                             32.33385220010578
+            signal_scale                                                                  0.1304732117749

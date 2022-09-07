@@ -1,0 +1,114 @@
+Bayesian Evidence                                                                         13711.13405915
+Maximum Log Likelihood                                                                    13743.83758073
+Maximum Log Posterior                                                                     13743.84929073
+
+model                                                                           CollectionPriorModel (N=10)
+    galaxies                                                                    CollectionPriorModel (N=8)
+        lens                                                                    Galaxy (N=8)
+            mass                                                                EllPowerLaw (N=6)
+            shear                                                               ExternalShear (N=2)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        VoronoiNNBrightnessImage (N=0)
+            regularization                                                      AdaptiveBrightnessSplit (N=0)
+    clumps                                                                      CollectionPriorModel (N=2)
+        clump_0                                                                 Galaxy (N=1)
+            mass                                                                SphIsothermal (N=1)
+        clump_1                                                                 Galaxy (N=1)
+            mass                                                                SphIsothermal (N=1)
+
+Maximum Log Likelihood Model:
+
+galaxies
+    lens
+        mass
+            elliptical_comps
+                elliptical_comps_0                                                        0.022
+                elliptical_comps_1                                                        0.082
+            einstein_radius                                                               1.218
+            centre
+                centre_0                                                                  -0.009
+                centre_1                                                                  -0.017
+            slope                                                                         1.917
+        shear
+            elliptical_comps
+                elliptical_comps_0                                                        0.005
+                elliptical_comps_1                                                        0.029
+clumps
+    clump_0
+        mass
+            einstein_radius                                                               0.001
+    clump_1
+        mass
+            einstein_radius                                                               0.002
+
+
+Summary (3.0 sigma limits):
+
+galaxies
+    lens
+        mass
+            elliptical_comps
+                elliptical_comps_0                                                        0.0280 (0.0133, 0.0454)
+                elliptical_comps_1                                                        0.0813 (0.0673, 0.0985)
+            einstein_radius                                                               1.2217 (1.2001, 1.2434)
+            centre
+                centre_0                                                                  -0.0113 (-0.0209, -0.0019)
+                centre_1                                                                  -0.0159 (-0.0304, -0.0004)
+            slope                                                                         2.0116 (1.8741, 2.2565)
+        shear
+            elliptical_comps
+                elliptical_comps_0                                                        0.0081 (-0.0038, 0.0208)
+                elliptical_comps_1                                                        0.0224 (0.0053, 0.0351)
+clumps
+    clump_0
+        mass
+            einstein_radius                                                               0.0130 (0.0001, 0.1067)
+    clump_1
+        mass
+            einstein_radius                                                               0.0200 (0.0001, 0.1135)
+
+
+Summary (1.0 sigma limits):
+
+galaxies
+    lens
+        mass
+            elliptical_comps
+                elliptical_comps_0                                                        0.0280 (0.0222, 0.0343)
+                elliptical_comps_1                                                        0.0813 (0.0768, 0.0865)
+            einstein_radius                                                               1.2217 (1.2153, 1.2280)
+            centre
+                centre_0                                                                  -0.0113 (-0.0141, -0.0082)
+                centre_1                                                                  -0.0159 (-0.0218, -0.0104)
+            slope                                                                         2.0116 (1.9448, 2.0866)
+        shear
+            elliptical_comps
+                elliptical_comps_0                                                        0.0081 (0.0041, 0.0129)
+                elliptical_comps_1                                                        0.0224 (0.0172, 0.0271)
+clumps
+    clump_0
+        mass
+            einstein_radius                                                               0.0130 (0.0040, 0.0268)
+    clump_1
+        mass
+            einstein_radius                                                               0.0200 (0.0072, 0.0415)
+
+instances
+
+galaxies
+    lens
+        redshift                                                                          0.208
+    source
+        redshift                                                                          0.524
+        pixelization
+            weight_floor                                                                  0.67751276683001
+            weight_power                                                                  1.8739746587707
+        regularization
+            inner_coefficient                                                             1.2871117522979665
+            outer_coefficient                                                             40.64495118837473
+            signal_scale                                                                  0.07271676309242
+clumps
+    clump_0
+        redshift                                                                          0.208
+    clump_1
+        redshift                                                                          0.208

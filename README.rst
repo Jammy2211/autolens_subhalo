@@ -14,22 +14,22 @@ The workspace includes the following main directories:
 What Results Are Here?
 ----------------------
 
-The `slacs/output` and `bells/output` folders contain folders with with following information for the lens light,
+The ``slacs/output`` and ``bells/output`` folders contain folders with with following information for the lens light,
 mass and subhalo models fitted to every lens:
 
- - `model.info`: The model parameterization and priors.
- - `model.results`: The inferred model parameters (maximum likelihood, 1 and 3 sigma confidence intervals).
- - `search.summary`: A summary of the _dynesty_ non-linear search.
- - `image`: Images showing the results of the fit, triangle plots and other quantities.
+- ``model.info``: The model parameterization and priors.
+- ``model.results``: The inferred model parameters (maximum likelihood, 1 and 3 sigma confidence intervals).
+- ``search.summary``: A summary of the _dynesty_ non-linear search.
+- ``image``: Images showing the results of the fit, triangle plots and other quantities.
 
 What Results Are Not Here?
 --------------------------
 
 Due to GitHub file size limits the following results are not included:
 
- - The Source pipeline results which perform model-fits initializing the source pixelization.
- - The `image` folder of every fit of the subhale grid search (`subhalo[2]_mass[total]_source_subhalo[search_lens_plane]`).
- - The `dynesty` samples of every fit.
+- The Source pipeline results which perform model-fits initializing the source pixelization.
+- The ``image`` folder of every fit of the subhale grid search (``subhalo[2]_mass[total]_source_subhalo[search_lens_plane]``).
+- The ``dynesty` samples of every fit.
 
 How Do I Get Those Results?
 ---------------------------

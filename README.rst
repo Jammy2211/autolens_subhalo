@@ -1,15 +1,21 @@
 Scanning For Dark Matter Subhalos in Hubble Space Telescope Imaging of 54 Strong Lenses
 =======================================================================================
 
-This repository contains result and scripts to accompany the paper "Scanning For Dark Matter Subhalos in \textit{Hubble} Space Telescope Imaging of 54 Strong Lenses".
+This repository contains result and scripts to accompany the paper "Scanning For Dark Matter Subhalos in \textit{Hubble} Space
+Telescope Imaging of 54 Strong Lenses":.
+
+https://arxiv.org/abs/2209.10566
 
 Structure
 ---------
 
 The workspace includes the following main directories:
 
+- ``PyAuto``: The PyAutoLens (and parent projects) source code used to generate the results and paper figures. Use
+this via a GitHub clone to run the .sqlite files.
 - ``slacs``: The results of fits to the SLACS sample and visualization scripts to produce paper plots.
 - ``bells``: The results of fits to the BELLS-GALLERY sample and visualization scripts to produce paper plots.
+- ``subhalo``: The scripts used to generate latex tables and figures in the paper.
 
 What Results Are Here?
 ----------------------
